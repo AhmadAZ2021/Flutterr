@@ -1,5 +1,7 @@
 // classes_info_page.dart
 
+import 'dart:ffi';
+
 import 'package:date_classifier/models/classes.dart';
 import 'package:flutter/material.dart';
 
@@ -89,6 +91,17 @@ class _ClassesDetailsState extends State<ClassesDetails> {
                         fontWeight: FontWeight.bold),
                   ),
                 ),
+                SizedBox(height: 20,),
+                Text('Samples Pictures:' , style: TextStyle(color: Colors.black87, fontSize: 15 , fontWeight: FontWeight.bold),),
+                SizedBox(height: 30,),
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Image.asset(widget.classDetails.image1 , width: 150 , height: 150, fit: BoxFit.cover,),
+                    Image.asset(widget.classDetails.image2 , width: 150 , height: 150,fit: BoxFit.cover,),
+                  ],
+                )
               ]),
             ),
           ),

@@ -75,8 +75,10 @@ class ContactUs extends StatelessWidget {
                   ]),
               child: Padding(
                 padding: const EdgeInsets.all(15.0),
-                child: Column(children: [
+                child: Column(
+                  children: [
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Icon(
                         Icons.phone,
@@ -85,35 +87,17 @@ class ContactUs extends StatelessWidget {
                         width: 10,
                       ),
                       Text(
-                        '+96277123548',
+                        '+9612345',
                         style: TextStyle(
                             color: Colors.black,
                             fontWeight: FontWeight.w600,
                             fontSize: 20),
                       )
                     ],
-                  )
-                ]),
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(15.0),
-            child: Container(
-              decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
-                    BoxShadow(
-                        offset: const Offset(0, 5),
-                        color: Theme.of(context).primaryColor.withOpacity(.2),
-                        spreadRadius: 2,
-                        blurRadius: 5)
-                  ]),
-              child: Padding(
-                padding: const EdgeInsets.all(15.0),
-                child: Column(children: [
+                  ),
+                  SizedBox(height: 30,),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Icon(
                         Icons.email,

@@ -2,8 +2,11 @@ import 'package:date_classifier/models/classes.dart';
 import 'package:date_classifier/screens/about.dart';
 import 'package:date_classifier/screens/classes_details.dart';
 import 'package:date_classifier/screens/classes_info.dart';
+import 'package:date_classifier/screens/classification.dart';
 import 'package:date_classifier/screens/contact_us.dart';
+import 'package:date_classifier/screens/image_view.dart';
 import 'package:date_classifier/screens/main_screen.dart';
+import 'package:date_classifier/screens/results.dart';
 import 'package:date_classifier/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -26,7 +29,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       // home: WelcomeScreen(),
-      initialRoute: 'welcome_screen',
+      initialRoute: 'main_screen',
       routes: {
         WelcomeScreen.screenRoute: (context) => WelcomeScreen(),
         MainScreen.screenRoute: (context) => MainScreen(),
@@ -37,6 +40,10 @@ class MyApp extends StatelessWidget {
               classDetails: classes[
                   0], // Example, provide the desired instance of dateclasses
             ),
+
+        classification.screenRoute: (context) => classification(),
+        imageview.screenRoute: (context) => imageview(),
+        results.screenRoute:(context) => results(),
       },
     );
   }

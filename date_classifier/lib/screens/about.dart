@@ -138,14 +138,14 @@ class AboutPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'Provided By:',
+                        'Developers:',
                         style: TextStyle(
                             color: Colors.black87,
                             fontSize: 15,
                             fontWeight: FontWeight.w600),
                       ),
                       Text(
-                        'AAZ',
+                        ' Sa\'ad Al-Zoubi \n Ahmad Al-Zaghameem',
                         style: TextStyle(
                             color: Colors.black87,
                             fontSize: 15,
